@@ -1,11 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
  <head>
-  <title>Index of /download/ansible_advanced_pilot/aap2</title>
+  <title>Index of /devops-bastion</title>
  </head>
  <body>
-<h1>Index of /download/ansible_advanced_pilot/aap2</h1>
-<ul><li><a href="/download/ansible_advanced_pilot/"> Parent Directory</a></li>
+<h1>Index of /devops-bastion</h1>
+<ul><li><a href="/devops-bastion"> Parent Directory</a></li>
 <li><a href="01_Course_introduction/"> 01_Course_introduction/</a></li>
 <li><a href="02_Architecture/"> 02_Architecture/</a></li>
 <li><a href="03_Developer_Resources/"> 03_Developer_Resources/</a></li>
