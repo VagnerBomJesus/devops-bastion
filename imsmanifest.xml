@@ -1,0 +1,111 @@
+<?xml version="1.0" standalone="no"?>
+<manifest identifier="_5fXTSqbzScB_course_id" version="1.3" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+                              http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <!-- adlcp:location>metadata.xml</adlcp:location -->
+  </metadata>
+  <organizations default="GPTE">
+    <organization identifier="GPTE">
+        <title>ansible_advanced</title>
+<item identifier="01_Course_introduction slides" identifierref="01_Course_introduction slides" isvisible="true"><title>01 Course introduction</title></item>
+<item identifier="01_01_Prepare_Class_Environment_Self_Paced_Lab" identifierref="01_01_Prepare_Class_Environment_Self_Paced_Lab" isvisible="true"><title>01 01 Prepare Class Environment Self Paced Lab</title></item>
+<item identifier="01_02_Visual_Studio_Code_IDE_Self_Paced_Lab" identifierref="01_02_Visual_Studio_Code_IDE_Self_Paced_Lab" isvisible="true"><title>01 02 Visual Studio Code IDE Self Paced Lab</title></item>
+<item identifier="02_Architecture slides" identifierref="02_Architecture slides" isvisible="true"><title>02 Architecture</title></item>
+<item identifier="02_01_Using_Git_Self_Paced_Lab" identifierref="02_01_Using_Git_Self_Paced_Lab" isvisible="true"><title>02 01 Using Git Self Paced Lab</title></item>
+<item identifier="02_02_Service_Account_Self_Paced_Lab" identifierref="02_02_Service_Account_Self_Paced_Lab" isvisible="true"><title>02 02 Service Account Self Paced Lab</title></item>
+<item identifier="03_Developer_Resources slides" identifierref="03_Developer_Resources slides" isvisible="true"><title>03 Developer Resources</title></item>
+<item identifier="03_01_Automation_Content_Navigator_Self_Paced_Lab" identifierref="03_01_Automation_Content_Navigator_Self_Paced_Lab" isvisible="true"><title>03 01 Automation Content Navigator Self Paced Lab</title></item>
+<item identifier="03_02_Custom_Execution_Environment_Self_Paced_Lab" identifierref="03_02_Custom_Execution_Environment_Self_Paced_Lab" isvisible="true"><title>03 02 Custom Execution Environment Self Paced Lab</title></item>
+<item identifier="04_Good_Practices slides" identifierref="04_Good_Practices slides" isvisible="true"><title>04 Good Practices</title></item>
+<item identifier="04_01_Dictionary_Parsing_Lab" identifierref="04_01_Dictionary_Parsing_Lab" isvisible="true"><title>04 01 Dictionary Parsing Lab</title></item>
+<item identifier="04_01_Dictionary_Parsing_Solutions_Lab" identifierref="04_01_Dictionary_Parsing_Solutions_Lab" isvisible="true"><title>04 01 Dictionary Parsing Solutions Lab</title></item>
+<item identifier="04_02_Jinja_Templates_Lab" identifierref="04_02_Jinja_Templates_Lab" isvisible="true"><title>04 02 Jinja Templates Lab</title></item>
+<item identifier="04_02_Jinja_Templates_Solutions_Lab" identifierref="04_02_Jinja_Templates_Solutions_Lab" isvisible="true"><title>04 02 Jinja Templates Solutions Lab</title></item>
+<item identifier="04_03_Using_Plugins_Self_Paced_Lab" identifierref="04_03_Using_Plugins_Self_Paced_Lab" isvisible="true"><title>04 03 Using Plugins Self Paced Lab</title></item>
+<item identifier="05_Building_Inventory slides" identifierref="05_Building_Inventory slides" isvisible="true"><title>05 Building Inventory</title></item>
+<item identifier="05_01_Inventory_Plugins_Self_Paced_Lab" identifierref="05_01_Inventory_Plugins_Self_Paced_Lab" isvisible="true"><title>05 01 Inventory Plugins Self Paced Lab</title></item>
+<item identifier="05_02_In_Memory_Inventory_Self_Paced_Lab" identifierref="05_02_In_Memory_Inventory_Self_Paced_Lab" isvisible="true"><title>05 02 In Memory Inventory Self Paced Lab</title></item>
+<item identifier="06_Building_Playbook slides" identifierref="06_Building_Playbook slides" isvisible="true"><title>06 Building Playbook</title></item>
+<item identifier="06_01_Writing_Ansible_Roles_Lab" identifierref="06_01_Writing_Ansible_Roles_Lab" isvisible="true"><title>06 01 Writing Ansible Roles Lab</title></item>
+<item identifier="06_01_Writing_Ansible_Roles_Solutions_Lab" identifierref="06_01_Writing_Ansible_Roles_Solutions_Lab" isvisible="true"><title>06 01 Writing Ansible Roles Solutions Lab</title></item>
+<item identifier="06_02_Creating_Ansible_Collections_Self_Paced_Lab" identifierref="06_02_Creating_Ansible_Collections_Self_Paced_Lab" isvisible="true"><title>06 02 Creating Ansible Collections Self Paced Lab</title></item>
+<item identifier="06_03_One_Command_Application_Deployment_Self_Paced_Lab" identifierref="06_03_One_Command_Application_Deployment_Self_Paced_Lab" isvisible="true"><title>06 03 One Command Application Deployment Self Paced Lab</title></item>
+<item identifier="07_Testing_Roles_Collections_and_Playbooks slides" identifierref="07_Testing_Roles_Collections_and_Playbooks slides" isvisible="true"><title>07 Testing Roles Collections and Playbooks</title></item>
+<item identifier="07_01_Understanding_Molecule_Self_Paced_Lab" identifierref="07_01_Understanding_Molecule_Self_Paced_Lab" isvisible="true"><title>07 01 Understanding Molecule Self Paced Lab</title></item>
+<item identifier="07_02_Testing_Role_with_Molecule_Self_Paced_Lab" identifierref="07_02_Testing_Role_with_Molecule_Self_Paced_Lab" isvisible="true"><title>07 02 Testing Role with Molecule Self Paced Lab</title></item>
+<item identifier="07_03_Testing_Playbook_And_Collections_Self_Paced_Lab" identifierref="07_03_Testing_Playbook_And_Collections_Self_Paced_Lab" isvisible="true"><title>07 03 Testing Playbook And Collections Self Paced Lab</title></item>
+<item identifier="08_IaC_Automation slides" identifierref="08_IaC_Automation slides" isvisible="true"><title>08 IaC Automation</title></item>
+<item identifier="08_01_Provision_Cloud_Instances_Lab" identifierref="08_01_Provision_Cloud_Instances_Lab" isvisible="true"><title>08 01 Provision Cloud Instances Lab</title></item>
+<item identifier="08_01_Provision_Cloud_Instances_Solutions_Lab" identifierref="08_01_Provision_Cloud_Instances_Solutions_Lab" isvisible="true"><title>08 01 Provision Cloud Instances Solutions Lab</title></item>
+<item identifier="08_02_Configure_Cloud_Instances_Lab" identifierref="08_02_Configure_Cloud_Instances_Lab" isvisible="true"><title>08 02 Configure Cloud Instances Lab</title></item>
+<item identifier="08_02_Configure_Cloud_Instances_Solutions_Lab" identifierref="08_02_Configure_Cloud_Instances_Solutions_Lab" isvisible="true"><title>08 02 Configure Cloud Instances Solutions Lab</title></item>
+<item identifier="09_Automation_Controller_Introduction slides" identifierref="09_Automation_Controller_Introduction slides" isvisible="true"><title>09 Automation Controller Introduction</title></item>
+<item identifier="10_Automation_Controller_Installation slides" identifierref="10_Automation_Controller_Installation slides" isvisible="true"><title>10 Automation Controller Installation</title></item>
+<item identifier="10_01_Multi_Machine_AC_Deployment_Lab" identifierref="10_01_Multi_Machine_AC_Deployment_Lab" isvisible="true"><title>10 01 Multi Machine AC Deployment Lab</title></item>
+<item identifier="10_01_Multi_Machine_AC_Deployment_Solution_Lab" identifierref="10_01_Multi_Machine_AC_Deployment_Solution_Lab" isvisible="true"><title>10 01 Multi Machine AC Deployment Solution Lab</title></item>
+<item identifier="10_02_Automation_Mesh_Deployment_Lab" identifierref="10_02_Automation_Mesh_Deployment_Lab" isvisible="true"><title>10 02 Automation Mesh Deployment Lab</title></item>
+<item identifier="10_02_Automation_Mesh_Deployment_Solution_Lab" identifierref="10_02_Automation_Mesh_Deployment_Solution_Lab" isvisible="true"><title>10 02 Automation Mesh Deployment Solution Lab</title></item>
+<item identifier="11_Automation_Hub slides" identifierref="11_Automation_Hub slides" isvisible="true"><title>11 Automation Hub</title></item>
+<item identifier="11_01_Platform_AH_Deployment_Lab" identifierref="11_01_Platform_AH_Deployment_Lab" isvisible="true"><title>11 01 Platform AH Deployment Lab</title></item>
+<item identifier="11_01_Platform_AH_Deployment_Solution_Lab" identifierref="11_01_Platform_AH_Deployment_Solution_Lab" isvisible="true"><title>11 01 Platform AH Deployment Solution Lab</title></item>
+<item identifier="11_02_AH_Content_Sync_Lab" identifierref="11_02_AH_Content_Sync_Lab" isvisible="true"><title>11 02 AH Content Sync Lab</title></item>
+<item identifier="11_03_AH_Connect_AC_Lab" identifierref="11_03_AH_Connect_AC_Lab" isvisible="true"><title>11 03 AH Connect AC Lab</title></item>
+<item identifier="11_04_Application_Deploy_Lab" identifierref="11_04_Application_Deploy_Lab" isvisible="true"><title>11 04 Application Deploy Lab</title></item>
+<item identifier="12_Final_Lab slides" identifierref="12_Final_Lab slides" isvisible="true"><title>12 Final Lab</title></item>
+<item identifier="12_Final_Lab" identifierref="12_Final_Lab" isvisible="true"><title>12 Final Lab</title></item>
+    </organization>
+  </organizations>
+  <resources>
+<resource identifier="01_Course_introduction slides" type="webcontent" adlcp:scormtype="sco" href="01_Course_introduction/scormdriver/indexAPI.html"></resource>
+<resource identifier="01_01_Prepare_Class_Environment_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="01_Course_introduction/01_01_Prepare_Class_Environment_Self_Paced_Lab.html"></resource>
+<resource identifier="01_02_Visual_Studio_Code_IDE_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="01_Course_introduction/01_02_Visual_Studio_Code_IDE_Self_Paced_Lab.html"></resource>
+<resource identifier="02_Architecture slides" type="webcontent" adlcp:scormtype="sco" href="02_Architecture/scormdriver/indexAPI.html"></resource>
+<resource identifier="02_01_Using_Git_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="02_Architecture/02_01_Using_Git_Self_Paced_Lab.html"></resource>
+<resource identifier="02_02_Service_Account_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="02_Architecture/02_02_Service_Account_Self_Paced_Lab.html"></resource>
+<resource identifier="03_Developer_Resources slides" type="webcontent" adlcp:scormtype="sco" href="03_Developer_Resources/scormdriver/indexAPI.html"></resource>
+<resource identifier="03_01_Automation_Content_Navigator_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="03_Developer_Resources/03_01_Automation_Content_Navigator_Self_Paced_Lab.html"></resource>
+<resource identifier="03_02_Custom_Execution_Environment_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="03_Developer_Resources/03_02_Custom_Execution_Environment_Self_Paced_Lab.html"></resource>
+<resource identifier="04_Good_Practices slides" type="webcontent" adlcp:scormtype="sco" href="04_Good_Practices/scormdriver/indexAPI.html"></resource>
+<resource identifier="04_01_Dictionary_Parsing_Lab" type="webcontent" adlcp:scormtype="asset" href="04_Good_Practices/04_01_Dictionary_Parsing_Lab.html"></resource>
+<resource identifier="04_01_Dictionary_Parsing_Solutions_Lab" type="webcontent" adlcp:scormtype="asset" href="04_Good_Practices/04_01_Dictionary_Parsing_Solutions_Lab.html"></resource>
+<resource identifier="04_02_Jinja_Templates_Lab" type="webcontent" adlcp:scormtype="asset" href="04_Good_Practices/04_02_Jinja_Templates_Lab.html"></resource>
+<resource identifier="04_02_Jinja_Templates_Solutions_Lab" type="webcontent" adlcp:scormtype="asset" href="04_Good_Practices/04_02_Jinja_Templates_Solutions_Lab.html"></resource>
+<resource identifier="04_03_Using_Plugins_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="04_Good_Practices/04_03_Using_Plugins_Self_Paced_Lab.html"></resource>
+<resource identifier="05_Building_Inventory slides" type="webcontent" adlcp:scormtype="sco" href="05_Building_Inventory/scormdriver/indexAPI.html"></resource>
+<resource identifier="05_01_Inventory_Plugins_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="05_Building_Inventory/05_01_Inventory_Plugins_Self_Paced_Lab.html"></resource>
+<resource identifier="05_02_In_Memory_Inventory_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="05_Building_Inventory/05_02_In_Memory_Inventory_Self_Paced_Lab.html"></resource>
+<resource identifier="06_Building_Playbook slides" type="webcontent" adlcp:scormtype="sco" href="06_Building_Playbook/scormdriver/indexAPI.html"></resource>
+<resource identifier="06_01_Writing_Ansible_Roles_Lab" type="webcontent" adlcp:scormtype="asset" href="06_Building_Playbook/06_01_Writing_Ansible_Roles_Lab.html"></resource>
+<resource identifier="06_01_Writing_Ansible_Roles_Solutions_Lab" type="webcontent" adlcp:scormtype="asset" href="06_Building_Playbook/06_01_Writing_Ansible_Roles_Solutions_Lab.html"></resource>
+<resource identifier="06_02_Creating_Ansible_Collections_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="06_Building_Playbook/06_02_Creating_Ansible_Collections_Self_Paced_Lab.html"></resource>
+<resource identifier="06_03_One_Command_Application_Deployment_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="06_Building_Playbook/06_03_One_Command_Application_Deployment_Self_Paced_Lab.html"></resource>
+<resource identifier="07_Testing_Roles_Collections_and_Playbooks slides" type="webcontent" adlcp:scormtype="sco" href="07_Testing_Roles_Collections_and_Playbooks/scormdriver/indexAPI.html"></resource>
+<resource identifier="07_01_Understanding_Molecule_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="07_Testing_Roles_Collections_and_Playbooks/07_01_Understanding_Molecule_Self_Paced_Lab.html"></resource>
+<resource identifier="07_02_Testing_Role_with_Molecule_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="07_Testing_Roles_Collections_and_Playbooks/07_02_Testing_Role_with_Molecule_Self_Paced_Lab.html"></resource>
+<resource identifier="07_03_Testing_Playbook_And_Collections_Self_Paced_Lab" type="webcontent" adlcp:scormtype="asset" href="07_Testing_Roles_Collections_and_Playbooks/07_03_Testing_Playbook_And_Collections_Self_Paced_Lab.html"></resource>
+<resource identifier="08_IaC_Automation slides" type="webcontent" adlcp:scormtype="sco" href="08_IaC_Automation/scormdriver/indexAPI.html"></resource>
+<resource identifier="08_01_Provision_Cloud_Instances_Lab" type="webcontent" adlcp:scormtype="asset" href="08_IaC_Automation/08_01_Provision_Cloud_Instances_Lab.html"></resource>
+<resource identifier="08_01_Provision_Cloud_Instances_Solutions_Lab" type="webcontent" adlcp:scormtype="asset" href="08_IaC_Automation/08_01_Provision_Cloud_Instances_Solutions_Lab.html"></resource>
+<resource identifier="08_02_Configure_Cloud_Instances_Lab" type="webcontent" adlcp:scormtype="asset" href="08_IaC_Automation/08_02_Configure_Cloud_Instances_Lab.html"></resource>
+<resource identifier="08_02_Configure_Cloud_Instances_Solutions_Lab" type="webcontent" adlcp:scormtype="asset" href="08_IaC_Automation/08_02_Configure_Cloud_Instances_Solutions_Lab.html"></resource>
+<resource identifier="09_Automation_Controller_Introduction slides" type="webcontent" adlcp:scormtype="sco" href="09_Automation_Controller_Introduction/scormdriver/indexAPI.html"></resource>
+<resource identifier="10_Automation_Controller_Installation slides" type="webcontent" adlcp:scormtype="sco" href="10_Automation_Controller_Installation/scormdriver/indexAPI.html"></resource>
+<resource identifier="10_01_Multi_Machine_AC_Deployment_Lab" type="webcontent" adlcp:scormtype="asset" href="10_Automation_Controller_Installation/10_01_Multi_Machine_AC_Deployment_Lab.html"></resource>
+<resource identifier="10_01_Multi_Machine_AC_Deployment_Solution_Lab" type="webcontent" adlcp:scormtype="asset" href="10_Automation_Controller_Installation/10_01_Multi_Machine_AC_Deployment_Solution_Lab.html"></resource>
+<resource identifier="10_02_Automation_Mesh_Deployment_Lab" type="webcontent" adlcp:scormtype="asset" href="10_Automation_Controller_Installation/10_02_Automation_Mesh_Deployment_Lab.html"></resource>
+<resource identifier="10_02_Automation_Mesh_Deployment_Solution_Lab" type="webcontent" adlcp:scormtype="asset" href="10_Automation_Controller_Installation/10_02_Automation_Mesh_Deployment_Solution_Lab.html"></resource>
+<resource identifier="11_Automation_Hub slides" type="webcontent" adlcp:scormtype="sco" href="11_Automation_Hub/scormdriver/indexAPI.html"></resource>
+<resource identifier="11_01_Platform_AH_Deployment_Lab" type="webcontent" adlcp:scormtype="asset" href="11_Automation_Hub/11_01_Platform_AH_Deployment_Lab.html"></resource>
+<resource identifier="11_01_Platform_AH_Deployment_Solution_Lab" type="webcontent" adlcp:scormtype="asset" href="11_Automation_Hub/11_01_Platform_AH_Deployment_Solution_Lab.html"></resource>
+<resource identifier="11_02_AH_Content_Sync_Lab" type="webcontent" adlcp:scormtype="asset" href="11_Automation_Hub/11_02_AH_Content_Sync_Lab.html"></resource>
+<resource identifier="11_03_AH_Connect_AC_Lab" type="webcontent" adlcp:scormtype="asset" href="11_Automation_Hub/11_03_AH_Connect_AC_Lab.html"></resource>
+<resource identifier="11_04_Application_Deploy_Lab" type="webcontent" adlcp:scormtype="asset" href="11_Automation_Hub/11_04_Application_Deploy_Lab.html"></resource>
+<resource identifier="12_Final_Lab slides" type="webcontent" adlcp:scormtype="sco" href="12_Final_Lab/scormdriver/indexAPI.html"></resource>
+<resource identifier="12_Final_Lab" type="webcontent" adlcp:scormtype="asset" href="12_Final_Lab/12_Final_Lab.html"></resource>
+  </resources>
+</manifest>

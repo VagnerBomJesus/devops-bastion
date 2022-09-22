@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><title>&nbsp;</title><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link href="revealjs-redhat/lib/css/theme-v2-liberation.css" rel="stylesheet" /><link href="revealjs-redhat/lib/css/theme-output.css" rel="stylesheet" /><link rel="stylesheet" href="revealjs-redhat/lib/css/font-awesome-4.3.0.css" /><link rel="stylesheet" href="revealjs-redhat/lib/css/gpe.css" id="theme" /><link rel="stylesheet" href="revealjs-redhat/lib/css/highlightjs/sunburst.min.css" /></head><script type="text/javascript">document.write( '<link rel="stylesheet" href="revealjs-redhat/lib/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script><body class="theme-font-liberation"><div class="reveal"><div class="slides"><section id="cover" data-background-image="image/1156524-bg_redhat.png" data-background-color="#cc0000"><h2>&nbsp;</h2><div class="scrollbar"><div class="sl-block" data-block-type="text" style="width: 832px; left: 80px; top: 150px; height: auto;"><div class="sl-block-content"><h1>Red Hat<sup>&#174;</sup> Ansible Automation Platform 2</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 776px; left: 80px; top: 350px;"><div class="sl-block-content"><h2>Good Practices</h2></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 211.706666666667px; height: 68px; left: 80px; top: 50px;"><div class="sl-block-content" style="z-index: 13;"><img data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAABECAYAAAD5uBtbAAAGdXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjarVdtliMnDPzPKXIEJCGQjsPne7lBjp9Su+3xzOxuNi9xj0030CCqpJIm7b/+POkPfMjdUtFm1WvN+BQvzh03lh8fv34pl+v3+qxyj9Hn/lSeA4wuQSuPx9bv+c9+ei3waDru9G2h5+Y0Pg/YPcD2ZaF7IwmLOEy8F/LnOD8G6LbQ96MdfE+wj2+d+YKC7kXiOb13lAaUlmI9Yd5CkvHLwo+NJL4kHW3FLwsGcO+4V7GERiS/AP4E4OvuC7DK33F9WGT3FPmCR321P+wn/ehP7wBeKL3tTPu+48/9vb+2eOGXngCes+yc/ThdLxVo1ftQzyNed5g3gKZcb1VcDV/NlnATl+Oy3PMEayvPPHBNcmIgfqjQok6H9tVOmjCx8OaGlnmCg5nQadLYeYIBkhIXHW5gY4mBmwnmBL38soWubf3abgLflReBNWbCYhQ0/5cr/c6kc2ZARIGl8oUV7OJwAlgRzBGlTJgGRujcoOoF8PP6+gleBQzqBbPhgD2PWAH0D6UP55KLaMFERfsIF2rrXgAQwQKFMSRgIFcSpUq5MadGBCANBHWYzlJ4gBZS5QUjuYhUkGMce+OdRtdUVn50Q3ZAhEpN0sAN4gVklaLwn1YMPtRVtKhq1aamrr1KLVVrra2GfvUmrTRttbVmzVtPJlZMrVozM7fu7AJ9U6/e3Ny9d2zasXLH2x0Teh88ZJSho442bPjok9OUWabOOtu06bMvXrIgAauutmz56ps2XGmXrbvutm377geuduSUo6eedux4Ov3F2k3rt+tfsEY3a3wxFRPbizX0tvZcgkJONDgDY1wIhLdggCQxB2fZqBQO5oKz7FAtUYaRGuQsCsbAYNnEeujF3QdzmqB2/wtvCUTw/8FcCup+g7nvvP2ItRU5bF6MPcIwQM2C6MOkzoY/yGKJAKY1RuyjhTayad7lAK/VIWw0L6FTaZUxBqxlNVrbV9HITkrRSumVyBiwlw0lROI5sNymZZHpXdO1G2JxAyLgPRvo70fKAPV6LfN7bXrrgAfTGaW3M4EepPUAInjbNtIjDQ+/GEfQro8DPNu2zimg3weOQIwpKj1w4s6+q+1Vs9fNFQtRqV2XJQhyJOGySgdytV7Tb3i/tPB9MlnXU4+q4L1NXzt+3h7K4Ffl7KITWJ89NiwHtyX3k3zg2X81BTO+mycbw/LaxGrae3k9PHcbcPZa1DtCgacHs6VeNYRhdTO4o8Db10LUa4FiGPfiE4lr1oYsQqeEVy0kNYQ1HQvQh5HYvLwAmJgunb171VjcAGWDD8GzFcYo8IcrAWx4U2i6h4S/n6HWU4iPI5RgMvxVlrVz+vYDalidymBXLg2WbYg/HGljVbcaCXpg0M4YtvHWDJy4Pz1k7Rv8S7N8Nz+t66Mr1X1ong7XuKLi4Z0QGlQ6cHVDtl+7cD2V5wJMgwCY4BWscp+L8K5Cs5vMPMGABLKR8k+5uKbPRMLsi0oM3VTeZJdZZYqn8HRUlJevY/IdDT90doeuqi2F9OW9c5tzEkTYj85WEwBAMEyQAzsgsaVuxC4PJHyo8IAn4yB74iAA11EDQKDWDgzGayuUfD1d/lTBGZSwyuE1wz322VINRpsADZwY+BmWvP2vPOpFwf3GC1AVT0FYdYkqv4SiryicSxnijkSAiCwduLaKo6AQMRwDBoLXBguJqkDlC5lCRizzU8MAw8HB61IIKXkwM8/CsJJO0K0oHhZ0EP6vu8GUOBVjTbhkErAJ2AALgkJs7Q6h1X0ATj6hdkidAMMh+9KnhdGo43xb7M170Rhw1V0TcADA2LqCy+rIDtiRUbOgjJobkQjdtTBrxgJWEQT4P4UePgSfYuQorICqFuCDToH7EWrCqqytSwMhKPo50jLy1I7QDeVGKkJiAoWw3UnX5ICyoiZFiCAaMnhFeUdyhWyz3jZsCAeAHCK+IumEK/asbS48FnufgVbT5ynflZ2Qkdazixm1bIesbLxhE8VYfopqQsFF3N3zGH0YL8e7kdot8hIS7kYIQWQq/luKW1TAp90A7fHm+uktFuCx4BDM77rCf08DTge+WKBVK1wK2oSgPd33+OTaaJN+D6tvYWb2z5ilX0/5B8y+JEjQfuaQGTWYYH9SyV8SSWfgh6In4ug4as8I9cvcMr5j9HvtTw6a3o7xo7weednT3+ZqzJLQvXI3AAAKOmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHicnZZ3VFTXFofPvXd6oc0wFClD770NIL03qdJEYZgZYCgDDjM0sSGiAhFFRAQVQYIiBoyGIrEiioWAYMEekCCgxGAUUVF5M7JWdOXlvZeX3x9nfWufvfc9Z+991roAkLz9ubx0WAqANJ6AH+LlSo+MiqZj+wEM8AADzABgsjIzAkI9w4BIPh5u9EyRE/giCIA3d8QrADeNvIPodPD/SZqVwReI0gSJ2ILNyWSJuFDEqdmCDLF9RsTU+BQxwygx80UHFLG8mBMX2fCzzyI7i5mdxmOLWHzmDHYaW8w9It6aJeSIGPEXcVEWl5Mt4lsi1kwVpnFF/FYcm8ZhZgKAIontAg4rScSmIibxw0LcRLwUABwp8SuO/4oFnByB+FJu6Rm5fG5ikoCuy9Kjm9naMujenOxUjkBgFMRkpTD5bLpbeloGk5cLwOKdP0tGXFu6qMjWZrbW1kbmxmZfFeq/bv5NiXu7SK+CP/cMovV9sf2VX3o9AIxZUW12fLHF7wWgYzMA8ve/2DQPAiAp6lv7wFf3oYnnJUkgyLAzMcnOzjbmcljG4oL+of/p8Df01feMxen+KA/dnZPAFKYK6OK6sdJT04V8emYGk8WhG/15iP9x4F+fwzCEk8Dhc3iiiHDRlHF5iaJ289hcATedR+fy/lMT/2HYn7Q41yJRGj4BaqwxkBqgAuTXPoCiEAESc0C0A/3RN398OBC/vAjVicW5/yzo37PCZeIlk5v4Oc4tJIzOEvKzFvfEzxKgAQFIAipQACpAA+gCI2AObIA9cAYewBcEgjAQBVYBFkgCaYAPskE+2AiKQAnYAXaDalALGkATaAEnQAc4DS6Ay+A6uAFugwdgBIyD52AGvAHzEARhITJEgRQgVUgLMoDMIQbkCHlA/lAIFAXFQYkQDxJC+dAmqAQqh6qhOqgJ+h46BV2ArkKD0D1oFJqCfofewwhMgqmwMqwNm8AM2AX2g8PglXAivBrOgwvh7XAVXA8fg9vhC/B1+DY8Aj+HZxGAEBEaooYYIQzEDQlEopEEhI+sQ4qRSqQeaUG6kF7kJjKCTCPvUBgUBUVHGaHsUd6o5SgWajVqHaoUVY06gmpH9aBuokZRM6hPaDJaCW2AtkP7oCPRiehsdBG6Et2IbkNfQt9Gj6PfYDAYGkYHY4PxxkRhkjFrMKWY/ZhWzHnMIGYMM4vFYhWwBlgHbCCWiRVgi7B7scew57BD2HHsWxwRp4ozx3nionE8XAGuEncUdxY3hJvAzeOl8Fp4O3wgno3PxZfhG/Bd+AH8OH6eIE3QITgQwgjJhI2EKkIL4RLhIeEVkUhUJ9oSg4lc4gZiFfE48QpxlPiOJEPSJ7mRYkhC0nbSYdJ50j3SKzKZrE12JkeTBeTt5CbyRfJj8lsJioSxhI8EW2K9RI1Eu8SQxAtJvKSWpIvkKsk8yUrJk5IDktNSeCltKTcpptQ6qRqpU1LDUrPSFGkz6UDpNOlS6aPSV6UnZbAy2jIeMmyZQplDMhdlxigIRYPiRmFRNlEaKJco41QMVYfqQ02mllC/o/ZTZ2RlZC1lw2VzZGtkz8iO0BCaNs2Hlkoro52g3aG9l1OWc5HjyG2Ta5EbkpuTXyLvLM+RL5Zvlb8t/16BruChkKKwU6FD4ZEiSlFfMVgxW/GA4iXF6SXUJfZLWEuKl5xYcl8JVtJXClFao3RIqU9pVllF2Us5Q3mv8kXlaRWairNKskqFylmVKVWKqqMqV7VC9ZzqM7os3YWeSq+i99Bn1JTUvNWEanVq/Wrz6jrqy9UL1FvVH2kQNBgaCRoVGt0aM5qqmgGa+ZrNmve18FoMrSStPVq9WnPaOtoR2lu0O7QndeR1fHTydJp1HuqSdZ10V+vW697Sw+gx9FL09uvd0If1rfST9Gv0BwxgA2sDrsF+g0FDtKGtIc+w3nDYiGTkYpRl1Gw0akwz9jcuMO4wfmGiaRJtstOk1+STqZVpqmmD6QMzGTNfswKzLrPfzfXNWeY15rcsyBaeFustOi1eWhpYciwPWN61olgFWG2x6rb6aG1jzbdusZ6y0bSJs9lnM8ygMoIYpYwrtmhbV9v1tqdt39lZ2wnsTtj9Zm9kn2J/1H5yqc5SztKGpWMO6g5MhzqHEUe6Y5zjQccRJzUnplO90xNnDWe2c6PzhIueS7LLMZcXrqaufNc21zk3O7e1bufdEXcv92L3fg8Zj+Ue1R6PPdU9Ez2bPWe8rLzWeJ33Rnv7ee/0HvZR9mH5NPnM+Nr4rvXt8SP5hfpV+z3x1/fn+3cFwAG+AbsCHi7TWsZb1hEIAn0CdwU+CtIJWh30YzAmOCi4JvhpiFlIfkhvKCU0NvRo6Jsw17CysAfLdZcLl3eHS4bHhDeFz0W4R5RHjESaRK6NvB6lGMWN6ozGRodHN0bPrvBYsXvFeIxVTFHMnZU6K3NWXl2luCp11ZlYyVhm7Mk4dFxE3NG4D8xAZj1zNt4nfl/8DMuNtYf1nO3MrmBPcRw45ZyJBIeE8oTJRIfEXYlTSU5JlUnTXDduNfdlsndybfJcSmDK4ZSF1IjU1jRcWlzaKZ4ML4XXk66SnpM+mGGQUZQxstpu9e7VM3w/fmMmlLkys1NAFf1M9Ql1hZuFo1mOWTVZb7PDs0/mSOfwcvpy9XO35U7keeZ9uwa1hrWmO18tf2P+6FqXtXXroHXx67rXa6wvXD++wWvDkY2EjSkbfyowLSgveL0pYlNXoXLhhsKxzV6bm4skivhFw1vst9RuRW3lbu3fZrFt77ZPxeziayWmJZUlH0pZpde+Mfum6puF7Qnb+8usyw7swOzg7biz02nnkXLp8rzysV0Bu9or6BXFFa93x+6+WmlZWbuHsEe4Z6TKv6pzr+beHXs/VCdV365xrWndp7Rv2765/ez9QwecD7TUKteW1L4/yD14t86rrr1eu77yEOZQ1qGnDeENvd8yvm1qVGwsafx4mHd45EjIkZ4mm6amo0pHy5rhZmHz1LGYYze+c/+us8Wopa6V1lpyHBwXHn/2fdz3d074neg+yTjZ8oPWD/vaKG3F7VB7bvtMR1LHSGdU5+Ap31PdXfZdbT8a/3j4tNrpmjOyZ8rOEs4Wnl04l3du9nzG+ekLiRfGumO7H1yMvHirJ7in/5LfpSuXPS9f7HXpPXfF4crpq3ZXT11jXOu4bn29vc+qr+0nq5/a+q372wdsBjpv2N7oGlw6eHbIaejCTfebl2/53Lp+e9ntwTvL79wdjhkeucu+O3kv9d7L+1n35x9seIh+WPxI6lHlY6XH9T/r/dw6Yj1yZtR9tO9J6JMHY6yx579k/vJhvPAp+WnlhOpE06T55Okpz6kbz1Y8G3+e8Xx+uuhX6V/3vdB98cNvzr/1zUTOjL/kv1z4vfSVwqvDry1fd88GzT5+k/Zmfq74rcLbI+8Y73rfR7yfmM/+gP1Q9VHvY9cnv08PF9IWFv4FA5jz/DYcD9IAAA+gaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA0LjQuMC1FeGl2MiI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4wLyIKICAgIHhtbG5zOkdJTVA9Imh0dHA6Ly93d3cuZ2ltcC5vcmcveG1wLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICB4bXBNTTpEb2N1bWVudElEPSJnaW1wOmRvY2lkOmdpbXA6MGMxMjkxNDQtZDQyMS00ZjFmLTljMzktZjFhNzQ4MTQ2ZWFiIgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU3MzNkYzAwLTY1NDgtNDQ4MC1iMjEzLTBiNzUxMTBhMjE3OSIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjEzNjFlMmVmLWFhYzYtNGM0NC04MzIzLWZlMzg2YmNkYzk1MyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iTWFjIE9TIgogICBHSU1QOlRpbWVTdGFtcD0iMTYyNDQ1NjcxMjg2ODUzNCIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjIyIgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiPgogICA8aXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgIDxpcHRjRXh0OkxvY2F0aW9uU2hvd24+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvblNob3duPgogICA8aXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgIDxpcHRjRXh0OlJlZ2lzdHJ5SWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpSZWdpc3RyeUlkPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NjM3YTQ3OS0yMDlhLTRjMWUtODRhNS1hMTU3YTNhZDE1ODkiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoTWFjIE9TKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMS0wNi0yM1QwOTo1ODozMi0wNDowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgIDxwbHVzOkltYWdlU3VwcGxpZXI+CiAgICA8cmRmOlNlcS8+CiAgIDwvcGx1czpJbWFnZVN1cHBsaWVyPgogICA8cGx1czpJbWFnZUNyZWF0b3I+CiAgICA8cmRmOlNlcS8+CiAgIDwvcGx1czpJbWFnZUNyZWF0b3I+CiAgIDxwbHVzOkNvcHlyaWdodE93bmVyPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6Q29weXJpZ2h0T3duZXI+CiAgIDxwbHVzOkxpY2Vuc29yPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6TGljZW5zb3I+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz77unsnAAAKOmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAEiJnZZ3VFTXFofPvXd6oc0wFClD770NIL03qdJEYZgZYCgDDjM0sSGiAhFFRAQVQYIiBoyGIrEiioWAYMEekCCgxGAUUVF5M7JWdOXlvZeX3x9nfWufvfc9Z+991roAkLz9ubx0WAqANJ6AH+LlSo+MiqZj+wEM8AADzABgsjIzAkI9w4BIPh5u9EyRE/giCIA3d8QrADeNvIPodPD/SZqVwReI0gSJ2ILNyWSJuFDEqdmCDLF9RsTU+BQxwygx80UHFLG8mBMX2fCzzyI7i5mdxmOLWHzmDHYaW8w9It6aJeSIGPEXcVEWl5Mt4lsi1kwVpnFF/FYcm8ZhZgKAIontAg4rScSmIibxw0LcRLwUABwp8SuO/4oFnByB+FJu6Rm5fG5ikoCuy9Kjm9naMujenOxUjkBgFMRkpTD5bLpbeloGk5cLwOKdP0tGXFu6qMjWZrbW1kbmxmZfFeq/bv5NiXu7SK+CP/cMovV9sf2VX3o9AIxZUW12fLHF7wWgYzMA8ve/2DQPAiAp6lv7wFf3oYnnJUkgyLAzMcnOzjbmcljG4oL+of/p8Df01feMxen+KA/dnZPAFKYK6OK6sdJT04V8emYGk8WhG/15iP9x4F+fwzCEk8Dhc3iiiHDRlHF5iaJ289hcATedR+fy/lMT/2HYn7Q41yJRGj4BaqwxkBqgAuTXPoCiEAESc0C0A/3RN398OBC/vAjVicW5/yzo37PCZeIlk5v4Oc4tJIzOEvKzFvfEzxKgAQFIAipQACpAA+gCI2AObIA9cAYewBcEgjAQBVYBFkgCaYAPskE+2AiKQAnYAXaDalALGkATaAEnQAc4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" /></div></div><div class="footer footer-cover">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_module_topics"><h2>Module Topics</h2><div class="scrollbar"><div class="ulist"><ul><li><p>The Ansible<sup>&#174;</sup> Way</p></li><li><p>Variables</p></li><li><p>Plugins</p></li><li><p>Modules</p></li><li><p>YAML</p></li><li><p>Jinja2 Template</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_the_ansible_sup_sup_way"><h2>The Ansible<sup>&#174;</sup> Way</h2><div class="scrollbar"><div class="ulist"><ul><li><p>DevOps and Automation</p></li><li><p>Infrastructure as code / Configuration as code</p></li><li><p>Complexity kills productivity</p></li><li><p>Optimize for readability</p></li><li><p>Don&#8217;t Repeat Yourself (DRY)</p></li><li><p>Version-control your Ansible Automation content</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_variables"><h2>Ansible Variables</h2><div class="scrollbar"><div class="ulist"><div class="title">Variables</div><ul><li><p>Can be set at a task, block, role, play level</p></li><li><p>Separate logic (tasks) from variables and reduce repetitive patterns</p></li><li><p>Find appropriate place(s) for variables based on what, where, and when set or modified</p></li><li><p>Understand variable precedence and visibility</p></li><li><p>Understand scope and the impact of <strong>-e</strong> or <strong>--extra-vars</strong></p></li></ul></div>
+<aside class="notes"><div class="ulist"><ul><li><p><strong>Variable precedence</strong> - <a href="https://docs.ansible.com/ansible/2.9/user_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable">https://docs.ansible.com/ansible/2.9/user_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable</a></p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_variables_2"><h2>Ansible Variables</h2><div class="scrollbar"><div class="ulist"><div class="title">Proper Naming</div><ul><li><p>Use descriptive, unique, human-meaningful names for variables</p></li><li><p>Prefix role variables with role names to avoid conflicts</p></li><li><p>Hide internal role vars with Python Style <em>snake case</em></p></li><li><p><strong><em>Sample Example</em></strong></p><div class="listingblock"><div class="content"><pre class="highlight"><code class="textinfo language-textinfo">haproxy_port: 8080
+role_haproxy_port: 8080
+_haproxy_port_: 8080</code></pre></div></div></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_variables_3"><h2>Ansible Variables</h2><div class="scrollbar"><div class="olist arabic"><div class="title">Variables - Types</div><ol class="arabic"><li><p><strong>Scalars</strong></p><div class="listingblock"><div class="content"><pre class="highlight"><code class="yaml language-yaml">haproxy_max_keepalive: 25
+haproxy_port: 80</code></pre></div></div></li><li><p><strong>Lists</strong> - (aka as arrays, vectors)</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="yaml language-yaml">base_packages:
+  - yum
+  - vim
+  - tmux</code></pre></div></div></li><li><p><strong>Dictionaries</strong></p><div class="listingblock"><div class="content"><pre class="highlight"><code class="yaml language-yaml">haproxy:
+  max_keepalive: 25
+  packages:
+    - haproxy
+    - firewalld
+  frontends:
+    - name: frontend_01
+      description: Load balancer for ...</code></pre></div></div></li></ol></div>
+<aside class="notes"><div class="paragraph"></div><p>Cover the 3 data types used by Ansible:</p>
+<div class="ulist"><ul><li><p><strong>Scalars</strong> - Holds a single value, Commonly associated with other scalars via prefix. Understand the simplicity of scalars when only 1 or 2 need to be used as in the first haproxy example.</p></li><li><p><strong>Lists</strong> - (aka as arrays, vectors in many programming langages), Holds multiple values, Simple to reference and loop on</p></li><li><p><strong>Dictionaries</strong> - Un-ordered collection of key value pairs, Easy to pass <em>around</em> , Problematic to update or join (<code>combine</code>). Understand the strength of dictionaries when more complex objects are required
+NOTE: There are complexities in updating existing dictionaries and re-assignment, see <code>combine</code></p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_plugins"><h2>Ansible Plugins</h2><div class="scrollbar"><div class="olist arabic"><ol class="arabic"><li><p>What is Ansible plugin?</p></li><li><p>List plugins</p><div class="ulist"><ul><li><p>Online - <a href="https://docs.ansible.com/ansible/latest/collections/all_plugins.html">https://docs.ansible.com/ansible/latest/collections/all_plugins.html</a></p></li><li><p>Offline -</p><div class="ulist"><ul><li><p>ansible-doc --list --type &lt;plugin_type&gt;</p></li><li><p>ansible-navigator doc -t &lt;plugin_type&gt; &lt;plugin&gt;</p></li></ul></div></li></ul></div></li></ol></div>
+<aside class="notes"><div class="ulist"><ul><li><p>Plugins are pieces of code that augment Ansible’s core functionality. Ansible uses a plugin architecture to enable a rich, flexible and expandable feature set. Ansible ships with a number of handy plugins, and you can easily write your own.</p></li></ul></div>
+<div class="paragraph"></div><p>Working with plugins: <a href="https://docs.ansible.com/ansible/latest/plugins/plugins.html">https://docs.ansible.com/ansible/latest/plugins/plugins.html</a></p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_plugins_2"><h2>Ansible Plugins</h2><div class="scrollbar"><div class="ulist"><div class="title">Useful ansible plugins</div><ul><li><p>Cache</p></li><li><p>Callback</p></li><li><p>Strategy</p></li><li><p>Lookup</p></li><li><p>Filter</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_plugins_3"><h2>Ansible Plugins</h2><div class="scrollbar"><div class="ulist"><div class="title">Installing Plugins</div><ul><li><p>Default plugins</p></li><li><p>Additinal plugins</p><div class="ulist"><ul><li><p>Ex: ansible-galaxy collection install community.general</p></li></ul></div></li></ul></div>
+<aside class="notes"><div class="ulist"><ul><li><p>Cache plugins allow Ansible to store gathered facts or inventory source data without the performance hit of retrieving them from source. The default cache plugin is the memory plugin, which only caches the data for the current execution of Ansible. Other plugins with persistent storage are available to allow caching the data across runs. Some of these cache plugins write to files, others write to databases. You can use different cache plugins for inventory and facts. If you enable inventory caching without setting an inventory-specific cache plugin, Ansible uses the fact cache plugin for both facts and inventory.</p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_plugins_4"><h2>Ansible Plugins</h2><div class="scrollbar"><div class="ulist"><div class="title">Using plugins</div><ul><li><p>Export environment variable</p><div class="ulist"><ul><li><p>Ex: ANSIBLE_CACHE_PLUGIN=&lt;plugin_name&gt;</p></li></ul></div></li><li><p>Change in the ansible.cfg</p><div class="listingblock"><div class="title">Ex: Sample ansible.cfg</div><div class="content"><pre class="highlight"><code class="textinfo language-textinfo">[defaults]
+fact_caching=&lt;plugin_name&gt;
+fact_caching = namespace.collection_name.cache_plugin_name</code></pre></div></div></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_plugins_5"><h2>Ansible Plugins</h2><div class="scrollbar"><aside><div class="paragraph text-center"></div><p>Instructor Demo: <strong>Ansible Plugins</strong></p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_modules_vs_plugins"><h2>Ansible Modules Vs plugins</h2><div class="scrollbar"><div class="ulist"><ul><li><p>Modules</p></li><li><p>Plugins</p></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>If you are looking to add functionality to Ansible, you might wonder whether you need a module or a plugin. Here is a quick overview to help you understand what you need:</p>
+<div class="ulist"><ul><li><p>Plugins:</p><div class="paragraph"></div><p>Plugins extend Ansible’s core functionality and execute on the control node within the /usr/bin/ansible process. Plugins offer options and extensions for the core features of Ansible - transforming data, logging output, connecting to inventory, and more.</p></li><li><p>Modules:</p><div class="paragraph"></div><p>Modules are reusable, standalone scripts that can be used by the Ansible API, the ansible command, or the ansible-playbook command. Modules provide a defined interface. Each module accepts arguments and returns information to Ansible by printing a JSON string to stdout before exiting. Modules execute on the target system (usually that means on a remote system) in separate processes. Modules are technically plugins, but for historical reasons we do not usually talk about “module plugins”.</p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_modules"><h2>Ansible Modules</h2><div class="scrollbar"><div class="ulist"><div class="title">Module Metadata &amp; Requirements</div><ul><li><p>Metadata-</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="sh language-sh">$ ansible-doc os_server_info |grep -A 4 -i metadata <i class="conum" data-value="1"></i><b>(1)</b>
+        METADATA: <i class="conum" data-value="2"></i><b>(2)</b>
+          status: <i class="conum" data-value="3"></i><b>(3)</b>
+          - preview <i class="conum" data-value="4"></i><b>(4)</b>
+          supported_by: community <i class="conum" data-value="5"></i><b>(5)</b></code></pre></div></div></li><li><p>Requirements-</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="sh language-sh">$ ansible-doc os_server_info |grep -i requirements <i class="conum" data-value="1"></i><b>(1)</b>
+REQUIREMENTS:  openstacksdk, openstacksdk &gt;= 0.12.0, python &gt;= 2.7 <i class="conum" data-value="2"></i><b>(2)</b></code></pre></div></div></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_yaml"><h2>YAML</h2><div class="scrollbar"><div class="ulist"><div class="title">Tips and Tricks</div><ul><li><p>Never use TAB key</p></li><li><p>Consistent with formatting</p></li><li><p>Tune your editor</p></li><li><p>Use yamllint for syntax check</p></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>We use YAML because it is easier for humans to read and write than other common data formats like XML or JSON</p>
+<div class="paragraph"></div><p>There’s another small quirk to YAML. All YAML files (regardless of their association with Ansible or not) can optionally begin with --- and end with &#8230;. This is part of the YAML format and indicates the start and end of a document.</p>
+<div class="ulist"><ul><li><p>Tune editor</p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_yaml_2"><h2>YAML</h2><div class="scrollbar"><div class="ulist"><div class="title">Use Native YAML Syntax</div><ul><li><p>This:</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="texinfo language-texinfo">- name: install telegraf
+  yum:
+    name: telegraf-{{ telegraf_version }}
+    state: present
+    update_cache: yes
+    enablerepo: telegraf
+  notify: restart telegraf
+</code></pre></div></div></li><li><p>Not this:</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="texinfo language-texinfo">- name: install telegraf
+  yum: name=telegraf-{{ telegraf_version }} state=present update_cache=yes enablerepo=telegraf
+  notify: restart telegraf</code></pre></div></div></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>Native YAML has more lines&#8212;however, those lines are shorter, cutting down on
+horizontal scrolling and line wrapping. It lets your eyes scan straight down the
+play.</p>
+<div class="paragraph"></div><p>The task parameters are stacked and easily distinguished.</p>
+<div class="paragraph"></div><p>Native YAML syntax also has the benefit of improved syntax highlighting in
+virtually any modern text editor. Being native YAML, editors such as
+vim and Atom highlight YAML keys&#8212;module names, directives, and parameter
+names&#8212;from their values, further aiding the readability of your content.</p>
+<div class="admonitionblock note"><table><tr><td class="icon"><i class="icon-note" title="Note"></i></td><td class="content">Many Red Hat<sup>&#174;</sup> documents use this shorthand for legacy reasons, although that is
+progressively being changed. (Documentation pull requests are accepted.)</td></tr></table></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_yaml_3"><h2>YAML</h2><div class="scrollbar"><div class="ulist"><div class="title">Use Multi-line with Block Scalars</div><ul><li><p>Preserve newlines <strong>|</strong> (literal)</p></li><li><p>Replace new lines with spaces (folded)</p><div class="ulist"><ul><li><p><strong>&gt;</strong> alone preserves final newline</p></li><li><p><strong>&gt;-</strong> removes final newline</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="yaml language-yaml">  vars:
+    motd: | <i class="conum" data-value="1"></i><b>(1)</b>
+      This system is for production database use only
+      Scheduled downtime window: Sundays 13:00-15:00
+  tasks:
+    - name: Create Heat stack from generated template
+      command: &gt;- <i class="conum" data-value="2"></i><b>(2)</b>
+        openstack stack create -f json --wait
+        -t {{ heat_master_template }} base-stack-{{ guid }}</code></pre></div></div></li></ul></div></li></ul></div>
+<aside class="notes"><div class="ulist"><ul><li><p><a href="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html">Ansible Docs YAML Syntax</a></p></li><li><p><a href="https://yaml-multiline.info/">YAML Multiline Blog Article</a></p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_jinja2_templates"><h2>Jinja2 Templates</h2><div class="scrollbar"><div class="ulist"><div class="title">Use case</div><ul><li><p>Templates should be as simple as possible:</p></li><li><p>Variable substitution</p></li><li><p>Conditionals</p></li><li><p>Simple control structures/iterations</p></li><li><p>Design for your use case, not the world&#8217;s</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_jinja2_templates_2"><h2>Jinja2 Templates</h2><div class="scrollbar"><div class="ulist"><div class="title">Things to avoid</div><ul><li><p>Managing variables in a template</p></li><li><p>Extensive and intricate conditionals</p></li><li><p>Conditional logic based on host names</p></li><li><p>Complex nested iterations</p></li><li><p>Label template output files as being generated by Ansible Engine</p><div class="ulist"><ul><li><p>Warns users that any changes are likely to be overwritten</p></li><li><p>Consider using <strong>ansible_managed</strong> variable with comment filter:</p><div class="ulist"><ul><li><p><strong><em>Sample Example</em></strong></p><div class="listingblock"><div class="content"><pre class="highlight"><code class="textinfo language-textinfo">{{ ansible_managed | comment }} <i class="conum" data-value="1"></i><b>(1)</b></code></pre></div></div></li></ul></div></li></ul></div></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>The <code>ansible_managed</code> string can be helpful to indicate that a file should not
+be edited directly because Ansible Engine may overwrite the contents of the file.</p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_jinja2_templates_3"><h2>Jinja2 Templates</h2><div class="scrollbar"><div class="ulist"><div class="title">Using Jinja2 Templates</div><ul><li><p><strong>template</strong> Module</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="yaml language-yaml">- name: Template a file to /etc/file.conf
+  template: <i class="conum" data-value="1"></i><b>(1)</b>
+    src: /mytemplates/foo.j2 <i class="conum" data-value="2"></i><b>(2)</b>
+    dest: /etc/file.conf <i class="conum" data-value="3"></i><b>(3)</b></code></pre></div></div></li><li><p><strong>lookup</strong> Plugin</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="yaml language-yaml">subscription: "{{ lookup('template', './templates/subscription.j2' ) }}" <i class="conum" data-value="1"></i><b>(1)</b></code></pre></div></div></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>Templates don&#8217;t necessarily need to be consumed by the <code>template</code> module.</p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_jinja2_templates_4"><h2>Jinja2 Templates</h2><div class="scrollbar"><aside><div class="paragraph text-center"></div><p>Instructor Demo: <strong>Jinja2 Templates</strong></p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_summary"><h2>Summary</h2><div class="scrollbar"><div class="ulist"><ul><li><p>The Ansible<sup>&#174;</sup> Way</p></li><li><p>Variables</p></li><li><p>Plugins</p></li><li><p>Modules</p></li><li><p>YAML</p></li><li><p>Jinja2 Template</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_module_completion"><h2>Module Completion</h2><div class="scrollbar"><script type="text/javascript" >
+
+    var moduleCompletionVersion = "1.8"
+    var host = window.parent.location.host;
+    console.log("Module Completion:  version = "+moduleCompletionVersion);
+
+    /*
+        Dokeos behavior:
+            - used to re-direct after having notified LMS of module completion
+        Sumtotal behavior:
+            - Not used
+            - Student should just close the browser tab for the module (apparently the originating tab stays open and allows the student to navigate to the next module)
+    */
+    function getCourseHomepageURL() {
+
+        //uriString = "http://www.redhat.com";
+        //uriString = "https://rh.dokeos.com/main/newscorm/lp_controller.php?cidReq=SCORMTEST&action=return_to_course_homepage"
+
+        uriString = document.location.origin;
+        uriString += "/main/course_home";
+        console.log("getCourseHomepageURL = "+uriString);
+        return uriString;
+    }
+
+     /*
+     Dokeos behavior:
+        - Request URL:      <a href="https://rh.dokeos.com/main/newscorm/lp_ajax_save_item.php">https://rh.dokeos.com/main/newscorm/lp_ajax_save_item.php</a>
+        - Response body:    update_toc('completed','6');update_progress_bar('1', '1', '%');update_stats();
+
+        NOTE:  Need to execute the module in Dokeos as a Learner to see results in Reporting.
+            - The Reporting displays results of Learners only.
+            - If you take the module as a Trainer you can see the progress in the Modules tool as per this screenshot:  <a href="http://snag.gy/gUgcp.jpg">http://snag.gy/gUgcp.jpg</a>
+    */
+    function SetSCOComplete() {
+        var SD = window.parent;
+
+        if (typeof SD.SetReachedEnd != "undefined") {
+            //This is the last page so set it complete
+            SD.SetReachedEnd();
+            SD.CommitData();
+            console.log("SetSCOComplete() just called SD.SetReachedEnd() and SD.CommitData()");
+
+            document.getElementById("completeDiv").style.display = "none";
+            console.log("typeof myDokeosWebPath = "+ typeof dokeosWebPath);
+            if(host.indexOf("dokeos") > 0) {
+                console.log("SetSCOComplete() detecting Dokeos environment.  Will display continue button");
+                document.getElementById("continueDiv").style.display = "block";
+            } else {
+                console.log("SetSCOComplete() detecting non-Dokeos environment.  Will display close button");
+                document.getElementById("closeDiv").style.display = "block";
+            }
+        }else {
+            noSCOmessage = "SetSCOComplete() LMS does not appear to support the SetReachedEnd() function";
+            alert(noSCOmessage);
+        }
+
+    }
+
+</script>
+
+<div id="completeDiv" >
+    <p>Nice job!</p>
+    <p> Click the button below to complete this module of the course:</p>
+    <input type="button" id="completeModule" value="Complete Module" style="font-size:1.0em;font-family:Oswald, sans-serif;" /></br/>
+</div>
+
+<div id="continueDiv" style="display:none">
+    <p>Click the button below to continue to the course homepage:</p>
+    <input type="button" id="continueModule" value="Continue" style="font-size:1.0em;font-family:Oswald, sans-serif;" onclick="top.location.href=getCourseHomepageURL()" /></br/>
+</div>
+
+<div id="closeDiv" style="display:none">
+    <p>Please continue with the next item in the course. </p>
+</div>
+
+
+<script type="text/javascript" >
+    document.getElementById("completeDiv").style.display = "visible";
+    document.getElementById("continueDiv").style.display = "none";
+    document.getElementById("closeDiv").style.display = "none";
+
+    // invoke SetSCOComplete function when the completeModule button is clicked
+    var el = document.getElementById("completeModule");
+    if (typeof el.addEventListener != "undefined") {
+        el.addEventListener("click", SetSCOComplete, false);
+    } else if (el.attachEvent) {
+        el.attachEvent('onclick', SetSCOComplete);
+    }
+
+</script><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section></div></div><script src="revealjs-redhat/lib/js/head.min.js"></script><script src="revealjs-redhat/lib/js/reveal.min.js"></script><script src="revealjs-redhat/lib/js/jquery-1.11.2.min.js"></script><script src="revealjs-redhat/lib/js/gpe.min.js"></script><script type="text/javascript">// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: true,
+  // Push each slide change to the browser history
+  history: true,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: false,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'none',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+  // Optional libraries used to extend on reveal.js
+
+  margin: 0.2,
+  marginTop: '1%', // Top position of the slide : percentage or px
+  marginLeft: '7%', // Left position of the slide : percentage or px
+
+  width: 960,
+  height: 700,
+  minScale: 0.2,
+  maxScale: 1,
+
+  // Theme (e.g., beige, black, blood, league, moon, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  theme: Reveal.getQueryHash().theme || 'gpe',
+
+  notes: {},
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    {
+      src: 'revealjs-redhat/lib/plugin/markdown/marked.js', condition: function () {
+      return !!document.querySelector('[data-markdown]');
+    }
+    },
+    {
+      src: 'revealjs-redhat/lib/plugin/markdown/markdown.js', condition: function () {
+      return !!document.querySelector('[data-markdown]');
+    }
+    },
+    {
+      src: 'revealjs-redhat/lib/plugin/highlight/highlight.js', async: true, condition: function () {
+      return !!document.querySelector('pre code');
+    },
+      callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+    },
+    { // DOES NOT WORK ANYMORE
+      src: 'revealjs-redhat/lib/plugin/zoom-js/zoom.js', async: true, condition: function () {
+      return !!document.body.classList;
+    }
+    },
+    {
+      src: 'revealjs-redhat/lib/plugin/notes/notes.js', async: true, condition: function () {
+      return !!document.body.classList;
+    }
+    }
+  ]
+   // TODO : Add a parameter to enable/disable REMOTE
+   // { src: 'revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+ });</script></body></html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><title>&nbsp;</title><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link href="revealjs-redhat/lib/css/theme-v2-liberation.css" rel="stylesheet" /><link href="revealjs-redhat/lib/css/theme-output.css" rel="stylesheet" /><link rel="stylesheet" href="revealjs-redhat/lib/css/font-awesome-4.3.0.css" /><link rel="stylesheet" href="revealjs-redhat/lib/css/gpe.css" id="theme" /><link rel="stylesheet" href="revealjs-redhat/lib/css/highlightjs/sunburst.min.css" /></head><script type="text/javascript">document.write( '<link rel="stylesheet" href="revealjs-redhat/lib/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script><body class="theme-font-liberation"><div class="reveal"><div class="slides"><section id="cover" data-background-image="image/1156524-bg_redhat.png" data-background-color="#cc0000"><h2>&nbsp;</h2><div class="scrollbar"><div class="sl-block" data-block-type="text" style="width: 832px; left: 80px; top: 150px; height: auto;"><div class="sl-block-content"><h1>Red Hat<sup>&#174;</sup> Ansible Automation Platform 2</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 776px; left: 80px; top: 350px;"><div class="sl-block-content"><h2>Developer Resources</h2></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 211.706666666667px; height: 68px; left: 80px; top: 50px;"><div class="sl-block-content" style="z-index: 13;"><img data-src="data:image/png;base64,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Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4wLyIKICAgIHhtbG5zOkdJTVA9Imh0dHA6Ly93d3cuZ2ltcC5vcmcveG1wLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICB4bXBNTTpEb2N1bWVudElEPSJnaW1wOmRvY2lkOmdpbXA6MGMxMjkxNDQtZDQyMS00ZjFmLTljMzktZjFhNzQ4MTQ2ZWFiIgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU3MzNkYzAwLTY1NDgtNDQ4MC1iMjEzLTBiNzUxMTBhMjE3OSIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjEzNjFlMmVmLWFhYzYtNGM0NC04MzIzLWZlMzg2YmNkYzk1MyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iTWFjIE9TIgogICBHSU1QOlRpbWVTdGFtcD0iMTYyNDQ1NjcxMjg2ODUzNCIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjIyIgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiPgogICA8aXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgIDxpcHRjRXh0OkxvY2F0aW9uU2hvd24+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvblNob3duPgogICA8aXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgIDxpcHRjRXh0OlJlZ2lzdHJ5SWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpSZWdpc3RyeUlkPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NjM3YTQ3OS0yMDlhLTRjMWUtODRhNS1hMTU3YTNhZDE1ODkiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoTWFjIE9TKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMS0wNi0yM1QwOTo1ODozMi0wNDowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgIDxwbHVzOkltYWdlU3VwcGxpZXI+CiAgICA8cmRmOlNlcS8+CiAgIDwvcGx1czpJbWFnZVN1cHBsaWVyPgogICA8cGx1czpJbWFnZUNyZWF0b3I+CiAgICA8cmRmOlNlcS8+CiAgIDwvcGx1czpJbWFnZUNyZWF0b3I+CiAgIDxwbHVzOkNvcHlyaWdodE93bmVyPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6Q29weXJpZ2h0T3duZXI+CiAgIDxwbHVzOkxpY2Vuc29yPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6TGljZW5zb3I+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz77unsnAAAKOmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAEiJnZZ3VFTXFofPvXd6oc0wFClD770NIL03qdJEYZgZYCgDDjM0sSGiAhFFRAQVQYIiBoyGIrEiioWAYMEekCCgxGAUUVF5M7JWdOXlvZeX3x9nfWufvfc9Z+991roAkLz9ubx0WAqANJ6AH+LlSo+MiqZj+wEM8AADzABgsjIzAkI9w4BIPh5u9EyRE/giCIA3d8QrADeNvIPodPD/SZqVwReI0gSJ2ILNyWSJuFDEqdmCDLF9RsTU+BQxwygx80UHFLG8mBMX2fCzzyI7i5mdxmOLWHzmDHYaW8w9It6aJeSIGPEXcVEWl5Mt4lsi1kwVpnFF/FYcm8ZhZgKAIontAg4rScSmIibxw0LcRLwUABwp8SuO/4oFnByB+FJu6Rm5fG5ikoCuy9Kjm9naMujenOxUjkBgFMRkpTD5bLpbeloGk5cLwOKdP0tGXFu6qMjWZrbW1kbmxmZfFeq/bv5NiXu7SK+CP/cMovV9sf2VX3o9AIxZUW12fLHF7wWgYzMA8ve/2DQPAiAp6lv7wFf3oYnnJUkgyLAzMcnOzjbmcljG4oL+of/p8Df01feMxen+KA/dnZPAFKYK6OK6sdJT04V8emYGk8WhG/15iP9x4F+fwzCEk8Dhc3iiiHDRlHF5iaJ289hcATedR+fy/lMT/2HYn7Q41yJRGj4BaqwxkBqgAuTXPoCiEAESc0C0A/3RN398OBC/vAjVicW5/yzo37PCZeIlk5v4Oc4tJIzOEvKzFvfEzxKgAQFIAipQACpAA+gCI2AObIA9cAYewBcEgjAQBVYBFkgCaYAPskE+2AiKQAnYAXaDalALGkATaAEnQAc4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" /></div></div><div class="footer footer-cover">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_module_topics"><h2>Module Topics</h2><div class="scrollbar"><div class="ulist"><ul><li><p>Red Hat Ansible Automation Platform</p></li><li><p>Ansible Content Navigator</p><div class="ulist"><ul><li><p>Installation</p></li><li><p>Modes</p></li></ul></div></li><li><p>Ansible Builder</p><div class="ulist"><ul><li><p>Installation</p></li><li><p>Definition file</p></li><li><p>Executing the build</p></li><li><p>Publishing an Automation Execution Environment</p></li></ul></div></li><li><p>Summary</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_red_hat_ansible_automation_platform"><h2>Red Hat Ansible Automation Platform</h2><div class="scrollbar"><div class="ulist"><ul><li><p>System Requirements &amp; Platform Subscription</p><table class="tableblock frame-all grid-all" style=""><colgroup><col /><col /></colgroup><thead><tr><th class="tableblock halign-left valign-top">Type</th><th class="tableblock halign-left valign-top">Required</th></tr></thead><tbody><tr><td class="tableblock halign-left valign-top"><div><div class="paragraph"></div><p>Operation system</p></div></td><td class="tableblock halign-left valign-top"><div><div class="paragraph"></div><p>Red Hat Enterprise Linux 8.4 or later 64-bit (x86)</p></div></td></tr><tr><td class="tableblock halign-left valign-top"><div><div class="paragraph"></div><p>Ansible</p></div></td><td class="tableblock halign-left valign-top"><div><div class="paragraph"></div><p>version 2.11 required</p></div></td></tr><tr><td class="tableblock halign-left valign-top"><div><div class="paragraph"></div><p>Subscription</p></div></td><td class="tableblock halign-left valign-top"><div><div class="paragraph"></div><p>Red Hat Ansible Automation Platform</p></div></td></tr></tbody></table></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_automation_content_navigator"><h2>Automation Content Navigator</h2><div class="scrollbar"><div class="ulist"><ul><li><p>What is Automation Content Navigator?</p></li><li><p>Use of Automation content navigator.</p></li></ul></div>
+<aside class="notes"><div class="ulist"><ul><li><p>As a content creator, you can use Automation content navigator to develop Ansible playbooks, collections, and roles that are compatible with the Red Hat Ansible Automation Platform. You can use Automation content navigator "Local development machines" and "Automation execution environments", with seamless and predictable results across them all.</p></li><li><p>Automation content navigator is a command line, content-creator-focused tool with a text-based user interface. You can use Automation content navigator to:</p><div class="olist arabic"><ol class="arabic"><li><p>Launch and watch jobs and playbooks.</p></li><li><p>Share stored, completed playbook and job run artifacts in JSON format.</p></li><li><p>Browse and introspect automation execution environments.</p></li><li><p>Browse your file-based inventory.</p></li><li><p>Render Ansible module documentation and extract examples you can use in your playbooks.</p></li></ol></div></li></ul></div></aside>
+<aside class="notes"></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_automation_content_navigator_2"><h2>Automation Content Navigator</h2><div class="scrollbar"><div class="olist arabic"><div class="title">Installation</div><ol class="arabic"><li><p>Prerequisites</p><div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p>RHEL 8 or later.</p></li><li><p>Valid Red Hat Subscription.</p></li></ol></div></li></ol></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_automation_content_navigator_3"><h2>Automation Content Navigator</h2><div class="scrollbar"><div class="ulist"><div class="title">Modes</div><ul><li><p>stdout</p></li><li><p>interactive</p></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>You can review your Ansible configuration with the Automation content navigator text-based user interface in interactive mode and delve into the settings. Automation content navigator pulls in the results from an accessible Ansible configuration file, or returns the defaults if no configuration file is present.
+. Execution Environments (:images)
+. Inventory (:inventory)
+. Collections (:collections*)
+. Executing a Playbook (:run)
+. Review Playbook Result (:replay)
+. Ansible Configuration (:config)</p>
+<div class="paragraph"></div><p>== Automation Content Navigator
+.Navigator Configuration
+* The command line
+* Within a settings file
+* As an environment variable
+* ANSIBLE_NAVIGATOR_CONFIG - The settings file path environment variable if set.
+* ./ansible-navigator.&lt;ext&gt; - The settings file within the current project directory, with no dot in the file name.
+* \~/.ansible-navigator.&lt;ext&gt;</p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_automation_content_navigator_4"><h2>Automation Content Navigator</h2><div class="scrollbar"><aside><div class="paragraph text-center"></div><p>Instructor Demo: <strong>Ansible Content Navigator</strong></p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_builder"><h2>Ansible Builder</h2><div class="scrollbar"><div class="ulist"><ul><li><p>What is Ansible Builder?</p></li><li><p>Why use Ansible Builder?</p></li></ul></div>
+<aside class="notes"><div class="ulist"><ul><li><p><strong>About Ansible Builder</strong>
+Ansible Builder is a command line tool that automates the process of building automation execution environments by using the metadata defined in various Ansible Collections, as well as by the user.</p></li><li><p><strong>Why use Ansible Builder?</strong>
+Before Ansible Builder was developed, Automation Platform users would potentially run against dependency issues and multiple error messages as they attempted to create a custom virtual environment or container that had all of their required dependencies installed.</p></li></ul></div>
+<div class="paragraph"></div><p>Through the use of an easily customizable definition file, Ansible Builder installs Ansible, specified Collections and any of its dependencies so that all of the necessary requirements to get jobs running are fulfilled behind the scenes.</p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_builder_2"><h2>Ansible Builder</h2><div class="scrollbar"><div class="ulist"><div class="title">Installation</div><ul><li><p>Red Hat Ansible Automation Platform subscription</p></li><li><p>Community version (PyPI)</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_builder_3"><h2>Ansible Builder</h2><div class="scrollbar"><div class="ulist"><div class="title">Definition file</div><ul><li><p>Sample Definition file</p><div class="listingblock"><div class="content"><pre class="highlight"><code class="textinfo language-textinfo">version: 1
+
+build_arg_defaults: <i class="conum" data-value="1"></i><b>(1)</b>
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "-v"
+
+ansible_config: 'ansible.cfg' <i class="conum" data-value="2"></i><b>(2)</b>
+
+dependencies: <i class="conum" data-value="3"></i><b>(3)</b>
+  galaxy: requirements.yml
+  python: requirements.txt
+  system: bindep.txt
+
+additional_build_steps: <i class="conum" data-value="4"></i><b>(4)</b>
+  prepend: |
+    RUN whoami
+    RUN cat /etc/os-release
+  append:
+    - RUN echo This is a post-install command!
+    - RUN ls -la /etc</code></pre></div></div></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>Once you have Ansible Builder installed, we will need to create a definition file which Ansible Builder will use to create your automation execution environment image. The high level process to build an automation execution environment image is for Ansible Builder to read and validate your definition file, then create a Containerfile, and finally pass the Containerfile to Podman which then packages and creates your automation execution environment image. The definition file we will create for Ansible Builder is in yaml format and contains different sections which we will discuss in further detail.</p>
+<div class="olist arabic"><ol class="arabic"><li><p>Lists default values for build arguments</p></li><li><p>Specifies the ansible.cfg file path</p></li><li><p>Specifies the location of various requirements files</p></li><li><p>Commands for additional custom build steps</p><div class="ulist"><ul><li><p>Breakdown of definition file content</p><div class="paragraph"></div><p>A definition file is necessary for building automation execution environments with Ansible Builder, as it specifies the content which will be included in the automation execution environment container image.</p></li></ul></div></li><li><p>Build args and base image:</p><div class="paragraph"></div><p>The build_arg_defaults section of the definition file is a dictionary whose keys can provide default values for arguments to Ansible Builder. following is list of values that can be used in build_arg_defaults:</p>
+<table class="tableblock frame-all grid-all" style="width:100%"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">ANSIBLE_GALAXY_CLI_COLLECTION_OPTS</p></td><td class="tableblock halign-left valign-top"></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Allows the user to pass the \–pre flag to enable the installation of pre-releases collections
+-c is the equivalent of setting verify_ssl to false</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">EE_BASE_IMAGE</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the parent image for the automation execution environment, enabling a new image to be built that is based off of an already-existing image</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">EE_BUILDER_IMAGE</p></td></tr></tbody></table>
+<div class="paragraph"></div><p>The values given inside build_arg_defaults will be hard-coded into the Containerfile, so these values will persist if podman build is called manually.</p>
+<div class="ulist"><ul><li><p>Ansible config file path</p><div class="paragraph"></div><p>When using an ansible.cfg file to pass a token and other settings for a private account to an automation hub server, list the config file path (relative to where the definition file is located) as a string to enable it as a build argument in the initial phase of the build.</p></li></ul></div></li></ol></div>
+<div class="paragraph"></div><p>The ansible.cfg file should be formatted like the following example:
+* Galaxy:</p>
+<div class="paragraph"></div><p>+
+The galaxy entry points to a valid requirements file for the ansible-galaxy collection install -r …​ command. The entry requirements.yml may be a relative path from the directory of the automation execution environment definition’s folder, or an absolute path.</p>
+<div class="ulist"><ul><li><p>Python:</p><div class="paragraph"></div><p>The python entry in the definition file points to a valid requirements file for the pip install -r …​ command. The entry requirements.txt is a file that installs extra Python requirements on top of what the Collections already list as their Python dependencies. It may be listed as a relative path from the directory of the automation execution environment definition’s folder, or an absolute path.</p></li><li><p>System:</p><div class="paragraph"></div><p>The system entry in the definition points to a bindep requirements file, which will install system-level dependencies that are outside of what the collections already include as their dependencies. It may be listed as a relative path from the directory of the automation execution environment definition’s folder, or an absolute path.</p></li></ul></div>
+<div class="paragraph"></div><p>To demonstrate this, the following is an example bindep.txt file that adds the libxml2 and subversion packages to a container:</p>
+<div class="paragraph"></div><p>Link: <a href="https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/ansible_builder_guide/assembly-using-builder">https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/ansible_builder_guide/assembly-using-builder</a></p>
+<div class="paragraph"></div><p>The prepend and append commands may be specified in the additional_build_steps section. These will add commands to the Containerfile which will run either before or after the main build steps are executed.</p>
+<div class="paragraph"></div><p>The syntax for additional_build_steps must be one of the following:</p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_builder_4"><h2>Ansible Builder</h2><div class="scrollbar"><div class="olist arabic"><div class="title">Executing the build</div><ol class="arabic"><li><p><strong>ansible-builder build</strong></p></li><li><p><strong>ansible-builder build -f definition-file-name.yml</strong></p></li></ol></div>
+<aside class="notes"><div class="ulist"><ul><li><p>Once you have created a definition file Procedure, To build an automation execution environment image, you can run</p><div class="olist arabic"><ol class="arabic"><li><p>ansible-builder build</p><div class="paragraph"></div><p>By default, Ansible Builder will look for a definition file named <strong>execution-environment.yml</strong> but a different file path can be specified as an argument via the -f flag:</p></li><li><p>ansible-builder build -f definition-file-name.yml</p></li></ol></div>
+<div class="paragraph"></div><p>where definition-file-name specifies the name of your definition file.</p></li></ul></div></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_builder_5"><h2>Ansible Builder</h2><div class="scrollbar"><div class="ulist"><div class="title">Publishing an Automation Execution Environment</div><ul><li><p>podman login -u=username -p=password automation-hub-url</p></li><li><p>podman push automation-hub-url/ee-image-name</p></li></ul></div>
+<aside class="notes"><div class="paragraph"></div><p>A container registry is a repository for storing container images. Once you have built an automation execution environment image, you’ll be ready to push that container image to the registry portion of your instance of automation hub.</p>
+<div class="paragraph"></div><p>With your automation hub URL on hand, run the following command to log in to Podman, substituting your username, password, and automation hub URL:</p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_ansible_builder_6"><h2>Ansible Builder</h2><div class="scrollbar"><aside><div class="paragraph text-center"></div><p>Instructor Demo: <strong>Ansible Builder</strong></p></aside><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_summary"><h2>Summary</h2><div class="scrollbar"><div class="ulist"><ul><li><p>Red Hat Ansible Automation Platform</p></li><li><p>Ansible Content Navigator</p><div class="ulist"><ul><li><p>Installation</p></li><li><p>Modes</p></li></ul></div></li><li><p>Ansible Builder</p><div class="ulist"><ul><li><p>Installation</p></li><li><p>Definition file</p></li><li><p>Executing the build</p></li><li><p>Publishing an Automation Execution Environment</p></li></ul></div></li><li><p>Summary</p></li></ul></div><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section>
+<section id="_module_completion"><h2>Module Completion</h2><div class="scrollbar"><script type="text/javascript" >
+
+    var moduleCompletionVersion = "1.8"
+    var host = window.parent.location.host;
+    console.log("Module Completion:  version = "+moduleCompletionVersion);
+
+    /*
+        Dokeos behavior:
+            - used to re-direct after having notified LMS of module completion
+        Sumtotal behavior:
+            - Not used
+            - Student should just close the browser tab for the module (apparently the originating tab stays open and allows the student to navigate to the next module)
+    */
+    function getCourseHomepageURL() {
+
+        //uriString = "http://www.redhat.com";
+        //uriString = "https://rh.dokeos.com/main/newscorm/lp_controller.php?cidReq=SCORMTEST&action=return_to_course_homepage"
+
+        uriString = document.location.origin;
+        uriString += "/main/course_home";
+        console.log("getCourseHomepageURL = "+uriString);
+        return uriString;
+    }
+
+     /*
+     Dokeos behavior:
+        - Request URL:      <a href="https://rh.dokeos.com/main/newscorm/lp_ajax_save_item.php">https://rh.dokeos.com/main/newscorm/lp_ajax_save_item.php</a>
+        - Response body:    update_toc('completed','6');update_progress_bar('1', '1', '%');update_stats();
+
+        NOTE:  Need to execute the module in Dokeos as a Learner to see results in Reporting.
+            - The Reporting displays results of Learners only.
+            - If you take the module as a Trainer you can see the progress in the Modules tool as per this screenshot:  <a href="http://snag.gy/gUgcp.jpg">http://snag.gy/gUgcp.jpg</a>
+    */
+    function SetSCOComplete() {
+        var SD = window.parent;
+
+        if (typeof SD.SetReachedEnd != "undefined") {
+            //This is the last page so set it complete
+            SD.SetReachedEnd();
+            SD.CommitData();
+            console.log("SetSCOComplete() just called SD.SetReachedEnd() and SD.CommitData()");
+
+            document.getElementById("completeDiv").style.display = "none";
+            console.log("typeof myDokeosWebPath = "+ typeof dokeosWebPath);
+            if(host.indexOf("dokeos") > 0) {
+                console.log("SetSCOComplete() detecting Dokeos environment.  Will display continue button");
+                document.getElementById("continueDiv").style.display = "block";
+            } else {
+                console.log("SetSCOComplete() detecting non-Dokeos environment.  Will display close button");
+                document.getElementById("closeDiv").style.display = "block";
+            }
+        }else {
+            noSCOmessage = "SetSCOComplete() LMS does not appear to support the SetReachedEnd() function";
+            alert(noSCOmessage);
+        }
+
+    }
+
+</script>
+
+<div id="completeDiv" >
+    <p>Nice job!</p>
+    <p> Click the button below to complete this module of the course:</p>
+    <input type="button" id="completeModule" value="Complete Module" style="font-size:1.0em;font-family:Oswald, sans-serif;" /></br/>
+</div>
+
+<div id="continueDiv" style="display:none">
+    <p>Click the button below to continue to the course homepage:</p>
+    <input type="button" id="continueModule" value="Continue" style="font-size:1.0em;font-family:Oswald, sans-serif;" onclick="top.location.href=getCourseHomepageURL()" /></br/>
+</div>
+
+<div id="closeDiv" style="display:none">
+    <p>Please continue with the next item in the course. </p>
+</div>
+
+
+<script type="text/javascript" >
+    document.getElementById("completeDiv").style.display = "visible";
+    document.getElementById("continueDiv").style.display = "none";
+    document.getElementById("closeDiv").style.display = "none";
+
+    // invoke SetSCOComplete function when the completeModule button is clicked
+    var el = document.getElementById("completeModule");
+    if (typeof el.addEventListener != "undefined") {
+        el.addEventListener("click", SetSCOComplete, false);
+    } else if (el.attachEvent) {
+        el.attachEvent('onclick', SetSCOComplete);
+    }
+
+</script><div class="footer">Copyright ©2012-2021 Red Hat, Inc. - c59943af488f59df1b4562ad430dee7320ea8a8e</div></div></section></div></div><script src="revealjs-redhat/lib/js/head.min.js"></script><script src="revealjs-redhat/lib/js/reveal.min.js"></script><script src="revealjs-redhat/lib/js/jquery-1.11.2.min.js"></script><script src="revealjs-redhat/lib/js/gpe.min.js"></script><script type="text/javascript">// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: true,
+  // Push each slide change to the browser history
+  history: true,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: false,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'none',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+  // Optional libraries used to extend on reveal.js
+
+  margin: 0.2,
+  marginTop: '1%', // Top position of the slide : percentage or px
+  marginLeft: '7%', // Left position of the slide : percentage or px
+
+  width: 960,
+  height: 700,
+  minScale: 0.2,
+  maxScale: 1,
+
+  // Theme (e.g., beige, black, blood, league, moon, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  theme: Reveal.getQueryHash().theme || 'gpe',
+
+  notes: {},
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    {
+      src: 'revealjs-redhat/lib/plugin/markdown/marked.js', condition: function () {
+      return !!document.querySelector('[data-markdown]');
+    }
+    },
+    {
+      src: 'revealjs-redhat/lib/plugin/markdown/markdown.js', condition: function () {
+      return !!document.querySelector('[data-markdown]');
+    }
+    },
+    {
+      src: 'revealjs-redhat/lib/plugin/highlight/highlight.js', async: true, condition: function () {
+      return !!document.querySelector('pre code');
+    },
+      callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+    },
+    { // DOES NOT WORK ANYMORE
+      src: 'revealjs-redhat/lib/plugin/zoom-js/zoom.js', async: true, condition: function () {
+      return !!document.body.classList;
+    }
+    },
+    {
+      src: 'revealjs-redhat/lib/plugin/notes/notes.js', async: true, condition: function () {
+      return !!document.body.classList;
+    }
+    }
+  ]
+   // TODO : Add a parameter to enable/disable REMOTE
+   // { src: 'revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+ });</script></body></html>
